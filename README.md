@@ -1,3 +1,3 @@
-## Complete Core Java Notes, Code and Interview Questions with Answers
+## Complete Core Java Code, Notes, Problems and many more...
 
 ### Core Java
