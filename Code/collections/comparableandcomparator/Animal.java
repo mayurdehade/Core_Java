@@ -1,5 +1,8 @@
 package core.collections.comparableandcomparator;
 
+//Animal class implementing Comparable interface
+//The Comparable interface is used here to define the natural ordering of Animal objects based on the `age` field.
+
 //implements comparable interface
 public class Animal implements Comparable<Animal> {
 
@@ -26,23 +29,17 @@ public class Animal implements Comparable<Animal> {
 		return weight;
 	}
 
-	@Override
-	public String toString() {
-		return "Animal [age=" + age + ", name=" + name + ", weight=" + weight + "]\n";
-	}
+	// Overriding the compareTo method to define sorting logic
+    // This method sorts Animal objects based on their `age` in ascending order.
+    @Override
+    public int compareTo(Animal other) {
+        return this.age - other.age;  // returns a positive number if this.age > other.age, 0 if equal, negative if this.age < other.age
+    }
 
-	// Unimplemented method in this we proved sorting logic
-	@Override
-	public int compareTo(Animal that) {
-
-		if (this.name == that.name) {
-			// string class implementing the comparable interface
-			// it have compareTo method
-			return this.name.compareTo(that.name);
-		}
-
-		// compare current object age with given object age
-		return this.age - that.age;
-	}
+    // Overriding toString method to display the Animal object in a readable format
+    @Override
+    public String toString() {
+        return "Animal [age=" + age + ", name=" + name + ", weight=" + weight + "]";
+    }
 
 }
