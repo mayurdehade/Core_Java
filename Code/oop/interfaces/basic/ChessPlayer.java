@@ -3,11 +3,13 @@ package core.oop.interfaces.basic;
 
 public interface ChessPlayer {
 	/*
-	 * All methods in Interface are public and abstract All variables in Interface
-	 * are public, static and final
+	 * By Default: 
+	 * Data Members -> Public Static Final
+	 * Methods -> Public Abstract
 	 */
 
 	// unimplemented method
 	// abstract method
 	void moves();
+	
 }
